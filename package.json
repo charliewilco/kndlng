@@ -6,7 +6,7 @@
   "scripts": {
     "bundle:dev": "webpack example.js ./dist/bundle.js",
     "bundle:prod": "webpack index.js ./dist/kindling.js -p",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run lint",
     "server": "webpack-dev-server --hot --open --colors --content-base dist/",
     "watch": "npm run bundle:dev -- -w",
     "start": "npm-run-all --parallel watch server",
