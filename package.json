@@ -1,6 +1,6 @@
 {
   "name": "kndlng",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Obsidian.css represented in JavaScript",
   "main": "dist/kindling.js",
   "scripts": {
