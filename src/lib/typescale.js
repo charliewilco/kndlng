@@ -1,6 +1,4 @@
-import config from './config'
-
-function typescale (x = config.spacing.baseSp, y = config.spacing.unit) {
+function typescale (x = '1', y = 'rem') {
   return {
     f1: `${x * 3.125}${y}`,
     f2: `${x * 2.5}${y}`,

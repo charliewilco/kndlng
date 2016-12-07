@@ -1,20 +1,24 @@
 // Uses webpack to load in the JSON
 import obsidian from 'json!obsidian.css/css.json'
 
-import cnf from './lib/config'
 import spacing from './lib/spacing'
 import typescale from './lib/typescale'
 import color from './lib/color'
 import families from './lib/families'
 
-function kndlng (config = cnf) {
-  return {
-    obsidian,
-    families,
-    spacing,
-    color,
-    typescale: typescale(config.spacing.baseSp, config.spacing.unit)
+const config = {
+  spacing: {
+    baseSp: 1,
+    unit: 'rem'
   }
+}
+
+const kndlng = {
+  obsidian,
+  families,
+  spacing,
+  color,
+  typescale: typescale(config.spacing.baseSp, config.spacing.unit)
 }
 
 export {
