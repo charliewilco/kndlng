@@ -3,29 +3,12 @@
 
 function spacing (x = '1', y = 'rem') {
   return {
-    one (x = '1', y = 'rem') {
-      return `${(x / 4) + y}`
-    },
-
-    two (x = '1', y = 'rem') {
-      return `${(x / 2) + y}`
-    },
-
-    three (x = '1', y = 'rem') {
-      return `${x + y}`
-    },
-
-    four (x = '1', y = 'rem') {
-      return `${(x * 2) + y}`
-    },
-
-    five (x = '1', y = 'rem') {
-      return `${(x * 2.4) + y}`
-    },
-
-    six (x = '1', y = 'rem') {
-      return `${(x * 4) + y}`
-    }
+    one: `${(x / 4) + y}`,
+    two: `${(x / 2) + y}`,
+    three: `${x + y}`,
+    four: `${(x * 2) + y}`,
+    five: `${(x * 2.4) + y}`,
+    six: `${(x * 4) + y}`
   }
 }
 

@@ -25,9 +25,9 @@ const styles = StyleSheet.create({
     fontSize: Typescale().f3,
     fontFamily: Families.avenir,
     color: Obsidian.yellow,
-    padding: Spacing.three(),
+    padding: Spacing.three,
     backgroundColor: Obsidian.blue,
-    marginBottom: Spacing.four()
+    marginBottom: Spacing().four
   },
   card: {
     maxWidth: '18.75rem',
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     color: Obsidian.offwhite,
     backgroundColor: Obsidian.red,
     textAlign: 'center',
-    padding: Spacing.four(),
+    padding: Spacing().four,
     fontSize: Typescale().f2,
     fontFamily: Families.charter
   },

@@ -6,19 +6,12 @@ import typescale from './lib/typescale'
 import color from './lib/color'
 import families from './lib/families'
 
-const config = {
-  spacing: {
-    baseSp: 1,
-    unit: 'rem'
-  }
-}
-
 const kndlng = {
   obsidian,
   families,
   spacing,
   color,
-  typescale: typescale(config.spacing.baseSp, config.spacing.unit)
+  typescale
 }
 
 export {
