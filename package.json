@@ -5,14 +5,14 @@
   "main": "dist/kindling.js",
   "scripts": {
     "bundle:dev": "webpack example.js ./dist/bundle.js",
-    "bundle:prod": "webpack index.js ./dist/kindling.js -p",
+    "bundle:prod": "webpack src/index.js ./dist/kindling.js -p",
     "test": "npm run lint",
     "server": "webpack-dev-server --hot --open --colors --content-base dist/",
-    "watch": "npm run bundle:dev -- -w",
+    "watch": "onchange 'example.js' 'src/**/*.js' -- npm run bundle:dev",
     "start": "npm-run-all --parallel watch server",
     "prestart": "npm run bundle:dev",
     "prepublish": "npm run bundle:prod",
-    "lint": "standard 'index.js' 'test.js' 'lib/**/*.js' --verbose | snazzy"
+    "lint": "standard 'src/index.js' 'example.js' 'src/lib/**/*.js' --verbose | snazzy"
   },
   "repository": {
     "type": "git",

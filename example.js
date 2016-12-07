@@ -1,5 +1,5 @@
 import { StyleSheet, css } from 'aphrodite/no-important'
-import kndlng, { Typescale, Color, Obsidian, Spacing, Families } from './index.js'
+import kndlng, { Typescale, Color, Obsidian, Spacing, Families } from './src/index.js'
 
 function btnFn (color, hover) {
   return {
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     fontSize: Typescale().f2,
     fontFamily: Families.charter
   },
-  button: btnFn(Obsidian.yellow, Obsidian.blue)
+  button: btnFn(Color.yellow.medium, Obsidian.blue)
 })
 
 class App extends HTMLElement {
@@ -66,7 +66,7 @@ class Button extends HTMLElement {
   }
 }
 
-console.log(kndlng, Typescale, Color, Obsidian, Spacing, Families)
+// console.log(kndlng, Typescale, Color, Obsidian, Spacing, Families)
 
 document.registerElement('my-app', App)
 document.registerElement('super-button', Button)
