@@ -1,9 +1,5 @@
 import { StyleSheet, css } from 'aphrodite/no-important'
-import { Typescale, Obsidian, Spacing, Families } from '.'
-
-// function linearGradient (x, y) {
-//   return `linear-gradient(to right, ${x}, ${y})`
-// }
+import kndlng, { Typescale, Color, Obsidian, Spacing, Families } from './index.js'
 
 function btnFn (color, hover) {
   return {
@@ -70,7 +66,7 @@ class Button extends HTMLElement {
   }
 }
 
-console.log(Obsidian)
+console.log(kndlng, Typescale, Color, Obsidian, Spacing, Families)
 
 document.registerElement('my-app', App)
 document.registerElement('super-button', Button)
