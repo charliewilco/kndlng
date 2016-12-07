@@ -2,10 +2,10 @@
   "name": "kndlng",
   "version": "0.2.0",
   "description": "Obsidian.css represented in JavaScript",
-  "main": "dist/kindling.js",
+  "main": "dist/kndlng.js",
   "scripts": {
     "bundle:dev": "webpack example.js ./dist/bundle.js",
-    "bundle:prod": "webpack src/index.js ./dist/kindling.js -p",
+    "bundle:prod": "webpack src/index.js ./dist/kndlng.js",
     "test": "npm run lint",
     "server": "webpack-dev-server --hot --open --colors --content-base dist/",
     "watch": "onchange 'example.js' 'src/**/*.js' -- npm run bundle:dev",

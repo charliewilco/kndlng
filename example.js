@@ -1,5 +1,5 @@
 import { StyleSheet, css } from 'aphrodite/no-important'
-import kndlng, { Typescale, Color, Obsidian, Spacing, Families } from './src/index.js'
+import kndlng, { Typescale, Color, Obsidian, Spacing, Families } from './src/'
 
 function btnFn (color, hover) {
   return {
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     fontSize: Typescale().f3,
     fontFamily: Families.avenir,
     color: Obsidian.yellow,
-    padding: Spacing.three,
+    padding: Spacing().three,
     backgroundColor: Obsidian.blue,
     marginBottom: Spacing().four
   },
