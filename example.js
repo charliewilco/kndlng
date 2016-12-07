@@ -66,7 +66,7 @@ class Button extends HTMLElement {
   }
 }
 
-// console.log(kndlng, Typescale, Color, Obsidian, Spacing, Families)
+console.log('from example', kndlng, Typescale, Color, Obsidian, Spacing, Families)
 
 document.registerElement('my-app', App)
 document.registerElement('super-button', Button)
